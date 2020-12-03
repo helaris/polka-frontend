@@ -33,7 +33,7 @@ function Person({ User }) {
         <p className="person__names">
           {User.firstName} {User.lastName}{" "}
         </p>
-        <p className="intrests">Intrested in {User.interests ?? "golf"}</p>
+        <p className="intrests">Interested in {User.interests ?? "golf"}</p>
       </div>
       {/* <section className="intrest__container">
         <h3>Intrests</h3>
