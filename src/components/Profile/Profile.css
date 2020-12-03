@@ -1,0 +1,52 @@
+img {
+    width: 200px
+}
+
+.profile__edit_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-label {
+    display: flex;
+    width: 350px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #525865;
+}
+
+.profile__signup__form {
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update__profile-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.profile__input__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile__image {
+    border-radius: 50%;
+    border: 5px solid rgba(201, 201, 201, 0.319);
+    margin-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+.chatpage__content__container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+  border-bottom: 2.5px solid rgba(232, 232, 232, 0.4);
+  /* margin-right: 20px; */
+}
+
+.chatcard__container {
+  border-right: 2.5px solid rgba(232, 232, 232, 0.4);
+}
+
+.chat__sidebar-container {
+  border: 1px solid rgba(232, 232, 232, 0.4);
+}
+
+.chatcard__inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 70px
+}
+
+.chatcard__inputs__text {
+  width: 100%;
+}
+
+.chatcard__inputs__btn {
+  margin-left: 10px;
+}
+
+.chatcard__inputs__btn:hover {
+  color: #354496!important;
+  cursor: pointer;
+}
+
+.chatcard__input__btn:hover {
+  cursor: pointer;
+}

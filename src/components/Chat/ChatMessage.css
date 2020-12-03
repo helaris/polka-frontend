@@ -1,0 +1,69 @@
+.message__container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.message__container--sender {
+  margin-left: 50px;
+}
+
+.message__container--receiver {
+  margin-right: 50px;
+  justify-content: flex-end;
+}
+
+.message__container img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.message {
+  /* background-color: rgba(219, 219, 219, 0.4); */
+  /* color: rgb(109, 106, 106); */
+  padding: 10px;
+  border-radius: 10px;
+  word-break: break-all;
+  max-width: 40%;
+  position: relative;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.message--sender {
+  background-color: #3f51b5;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.message--receiver {
+  background-color:#ebebeb;
+  margin-right: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.arrow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 0;
+  margin-top: -10px;
+}
+
+.arrow--sender:before {
+  border-right-color: #3f51b5;
+  margin-left: -20px;
+  left: 10px;
+  border-left: 0;
+}
+
+.arrow--receiver:before {
+  border-left-color: #ebebeb;
+  margin-right: -20px;
+  right: 10px;
+  border-right: 0;
+}

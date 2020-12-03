@@ -1,0 +1,49 @@
+.contactInfo__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #a5c0e448);
+  border-bottom: 1px solid  #a5c0e43b;
+  margin-bottom: 30px;
+}
+
+.contactInfo__header img {
+  position: absolute;
+  width: 160px;
+  bottom: -10px;
+  right: 200px;
+}
+
+.contactInfo__header h1 {
+  color: #263B96;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.contact {
+    font-size: 1em;
+    margin: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact h3 {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    margin: 20px;
+    max-width: 40%;
+    line-height: 1.6;
+    text-align: center;
+    width: auto;
+  }

@@ -1,0 +1,39 @@
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__info {
+  font-size: 1em;
+  padding: 15px;
+  border-bottom: 2px solid rgba(232, 232, 232, 0.4);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contact__container:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.contact__image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.contact__info h1 {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.contact__delete:hover {
+  cursor: pointer;
+  color: #ba000d!important
+}
+
+.contact__delete {
+  margin-right: 10px;
+}

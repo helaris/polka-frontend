@@ -1,0 +1,49 @@
+.eventItem {
+    background-color: var(--first--color);
+    box-shadow: 2px 4px 10px #c0c0c0a1;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.eventItem:hover {
+    background-color: rgba(239, 252, 253, 0.836);
+}
+
+.eventItem__photo {
+    width: 30%;
+}
+
+.event__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.eventItem__header {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+    color: var(--fifth--color);
+}
+
+.eventItem__description {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 0 15px 0;
+    color: rgba(0, 0, 0, 0.75)
+    }
+
+.ArrowForwardIosIcon:hover {
+    color: var(--fourth--color);
+  }

@@ -1,0 +1,235 @@
+.userprofile__header-container {
+  /* background-color: #3f51b5; */
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2833;
+  background-image: linear-gradient(rgba(12, 20, 32, 0.781), rgba(15, 22, 32, 0.781)), url(../../../assets/hogwarts.png);
+  /* filter: grayscale(100%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.heading {
+  background-color: #2e59a8;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 15px 0;
+}
+
+.edit__btn {
+  background-color: #fff;
+}
+
+.userprofile__header-container img {
+  border-radius: 30%;
+  width: 140px;
+  max-width: 100%;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.userprofile__header-container h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.msg__btn {
+  background-color: #FDF7FF !important;
+}
+
+.bg-container {
+  background-color: var(--main--color);
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  /* background-color: rgb(164, 203, 237); */
+  margin: 30px;
+  grid-gap: 20px;
+  grid-template-areas: "events info friends" "groups info friends";
+}
+
+/*EVENTS*/
+
+.events__container {
+  grid-area: events;
+  width: 100%;
+}
+
+.event__container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.date__container {
+  background-color: #EAECF5;
+  color: #000;
+  padding: 5px 15px;
+  text-align: center;
+  min-height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.date__container h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: #2e59a8;
+}
+
+.date__container p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e59a8;
+}
+
+.event__description {
+  padding: 0px 20px;
+  flex: 1;
+}
+
+.event__description h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2e59a8;
+}
+
+.event__description p {
+  font-size: 0.9rem;
+  padding-top: 10px;
+  color: #2e59a8ef;
+}
+
+/*GROUPS*/
+
+.group__container {
+  grid-area: groups;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 10px;
+  margin: 10px 0;
+  flex-direction: column;
+  color: #fff;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  padding: 20px;
+  background-color: #E9ECF5;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.027);
+  width: 100%;
+}
+
+.group__text {
+  flex: 1;
+}
+
+.group__text h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #2e59a8;
+}
+
+.group__text p {
+  padding-right: 25px;
+  word-break: break-all;
+  color: #2e59a8ef;
+}
+
+/*PROFILE INFO*/
+
+.profile__info {
+  grid-area: info;
+  width: 100%;
+}
+
+.profile__container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  color: #fff;
+  font-weight: 450;
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+.profile__container li {
+  color: #2e59a8;
+  padding: 15px;
+  margin: 2px 0;
+}
+
+.profile__container li:nth-child(even) {
+  background-color: #EAECF5;
+}
+
+/*FRIENDS*/
+
+.friends__main-container {
+  grid-area: friends;
+  width: 100%;
+}
+
+.friends__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15); */
+  background-color: #E9ECF5;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.friend__container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 7px;
+  /* text-align: center; */
+}
+
+.friend__text h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2e59a8;
+}
+
+.friend__text p {
+  font-size: 0.8rem;
+  color: #2e59a8ef;
+}
+
+.friend__container img {
+  width: 50px;
+  margin-right: 6px;
+  border-radius: 10px;
+}

@@ -1,0 +1,115 @@
+.nav {
+  background-color: var(--main--color);
+  background: rgb(253, 253, 254);
+  background: linear-gradient(72deg, rgba(253, 253, 254, 1) 0%, rgba(230, 237, 247, 1) 98%);
+  height: 100px;
+  display: flex;
+  color: #0B0C10;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  max-width: 1000px;
+  z-index: 999;
+}
+
+.nav__logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  margin-left: 20px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: var(--secondary--color);
+  text-transform: uppercase;
+}
+
+.login__logo {
+  display: flex;
+  align-items: center;
+  color: var(--secondary--color);
+}
+
+.mobile__icon {
+  position: absolute;
+  color: var(--secondary--color);
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90vh;
+  opacity: 1;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: -1000px;
+  background-color: var(--third--color);
+}
+
+.nav__menu1 {
+  display: flex;
+}
+
+.active {
+  right: 0;
+}
+
+.nav__item {
+  margin: 40px 0 0 20px;
+}
+
+.nav__item a {
+  padding: 10px;
+  font-weight: bolds;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--secondary--color);
+  text-transform: capitalize;
+}
+
+.nav__item a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 960px) {
+  .nav__container {
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+  }
+  .mobile__icon {
+    display: none;
+  }
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: unset;
+    background-color: transparent;
+  }
+  .nav__item {
+    margin: 0px 20px;
+  }
+  .nav__loggedOut {
+    justify-content: flex-end;
+  }
+}
