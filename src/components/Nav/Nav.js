@@ -36,7 +36,7 @@ const Nav = ({ userId, setUserId }) => {
           <>
             <div className="nav__logo" >
               <Link to={`/people/${username}`}>
-              <img src={Logo} alt="Polka logo" />
+                <img src={Logo} alt="Polka logo" />
               </Link>
             </div>
             <ul
@@ -72,11 +72,11 @@ const Nav = ({ userId, setUserId }) => {
           </>
         ) : (
             <>
-            <div className="nav__logo" >
-              <Link to={`/people/${username}`}>
-              <img src={Logo} alt="Polka logo" />
-              </Link>
-            </div>
+              <div className="nav__logo" >
+                <Link to={"/"}>
+                  <img src={Logo} alt="Polka logo" />
+                </Link>
+              </div>
               <ul
                 className={`nav__menu nav__loggedOut ${click && "nav_menu active"}`}
                 onClick={handleClick}
